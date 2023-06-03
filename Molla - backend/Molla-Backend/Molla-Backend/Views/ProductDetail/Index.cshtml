@@ -1,0 +1,463 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Product Detail Page";
+}
+
+
+
+@section CSS{
+    <link rel="stylesheet" href="~/assets/scss/Product Detail/productdetail.css">
+}
+
+<section id="links">
+    <div class="container">
+        <div class="all-links">
+            <a href="~/home.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="~/blog.html">Blog</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Classic</span>
+        </div>
+        <div class="next-prev">
+            <div class="next">
+                <i class="fa-solid fa-chevron-left"></i>
+                <span>Prev</span>
+            </div>
+            <div class="prev">
+                <span>Next</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="product-info">
+    <div class="container">
+        <div class="all">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="left">
+                        <div class="left-p order-last">
+                            <img src="~/assets/imgs/Product Detail/@Model.Images.Where(m=>m.IsMain).FirstOrDefault().Image" alt="" class="active first">
+                            <img src="~/assets/imgs/Product Detail/@Model.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" alt=""
+                                 class="not-active second">
+                        </div>
+                        <div class="right-p order-lg-last">
+                            <div class="zoomArea">
+                                <img id="NZoomImg" data-NZoomscale="1.5" src="~/assets/imgs/Product Detail/@Model.Images.Where(m=>m.IsMain).FirstOrDefault().Image"
+                                     alt="Product Image">
+                            </div>
+                            <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="right">
+                        <div class="text">
+                            <h4>@Model.Name</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                            </div>
+                            <p class="reviews">( 2 Reviews )</p>
+                            <h3>$ @Model.Price</h3>
+                            <span>
+                                @Model.Features
+                            </span>
+                            <div class="color">
+                                <h6>Color: </h6>
+                                <div class="circle">
+                                    <button style="background-color: #cc9967;"></button>
+                                    <button style="background-color: #9966cc;"></button>
+                                    <button style="background-color: #3399cc;"></button>
+                                </div>
+                            </div>
+                            <div class="size">
+                                <h6>Size: </h6>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        Select a size
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <i class="fa-solid fa-check check"></i>
+                                        <li><a class="dropdown-item" href="#">Select a size</a></li>
+                                        <li><a class="dropdown-item" href="#">Small</a></li>
+                                        <li><a class="dropdown-item" href="#">Medium</a></li>
+                                        <li><a class="dropdown-item" href="#">Large</a></li>
+                                        <li><a class="dropdown-item" href="#">Extra Large</a></li>
+                                        <li><a class="dropdown-item" href="#">Extra Small</a></li>
+                                    </ul>
+                                </div>
+                                <span><i class="fa-solid fa-table-list"></i>size guide</span>
+                            </div>
+                            <div class="qty">
+                                <h6>Qty: </h6>
+                                <div class="quantity">
+                                    <i class="fa-solid fa-minus minus"></i>
+                                    <input type="number" class="input text-center" min="1" max="10000"
+                                           value="1">
+                                    <i class="fa-solid fa-plus plus"></i>
+                                </div>
+                            </div>
+                            <div class="options">
+                                <div class="add-cart">
+                                    <span><i class="fa-solid fa-cart-plus"></i>Add to Cart</span>
+                                </div>
+                                <div class="add-wishlist">
+                                    <span><i class="fa-regular fa-heart"></i>Add to Wishlist</span>
+                                </div>
+                            </div>
+                            <div class="categories">
+                                <p>Category: </p>
+                                <span>@Model.Features </span>
+                                @*<span>Women, </span>
+                                <span>Clothing</span>*@
+                            </div>
+                            <div class="share">
+                                <p>Share: </p>
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-pinterest"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="tab-part">
+    <div class="container">
+        <div class="tabs" data-addui='tabs'>
+            <div class="all-heads" role='tabs'>
+                <div class="eachHead">Description</div>
+                <div class="eachHead">Additional Information</div>
+                <div class="eachHead">Shipping & Returns</div>
+                <div class="eachHead">Reviews (2)</div>
+            </div>
+            <div class="all-contents" role='contents'>
+                <div class="each-content">
+                    <div class="container">
+                        <div class="description">
+                            <h5>Product Information</h5>
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                                volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra
+                                non,
+                                semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis
+                                fermentum.
+                                Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+                                Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                                vulputate sem tristique cursus.
+                            </span>
+                            <ul>
+                                <li>Nunc nec porttitor turpis. In eu risus enim. In vitae mollis elit.</li>
+                                <li>Vivamus finibus vel mauris ut vehicula.</li>
+                                <li>Nullam a magna porttitor, dictum risus nec, faucibus sapien.</li>
+                            </ul>
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                                volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra
+                                non,
+                                semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis
+                                fermentum.
+                                Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+                                Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                                vulputate sem tristique cursus.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-content">
+                    <div class="container">
+                        <div class="additional-info">
+                            <h5>Information</h5>
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                                volutpat
+                                mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non,
+                                semper
+                                suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum.
+                                Aliquam
+                                porttitor mauris sit amet orci.
+                            </span>
+                            <h5 class="fabric">Fabric & care</h5>
+                            <ul>
+                                <li>Faux suede fabric</li>
+                                <li>Gold tone metal hoop handles.</li>
+                                <li>RI branding</li>
+                                <li>Snake print trim interior</li>
+                                <li>Adjustable cross body strap</li>
+                                <li>Height: 31cm; Width: 32cm; Depth: 12cm; Handle Drop: 61cm</li>
+                            </ul>
+                            <h5>Size</h5>
+                            <span>one size</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-content">
+                    <div class="container">
+                        <div class="shipping">
+                            <h5>Delivery & returns</h5>
+                            <p>
+                                We deliver to over 100 countries around the world. For full details of the
+                                delivery
+                                options we offer, please view our <span>Delivery information</span><br>
+                                We hope you’ll love every purchase, but if you ever need to return an item you
+                                can do so
+                                within a month of receipt. For full details of how to make a return, please view
+                                our
+                                <span>Returns information</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-content">
+                    <div class="container">
+                        <div class="reviews">
+                            <div class="all-rev">
+                                <h4>Reviews (2)</h4>
+                                <div class="each cross">
+                                    <div class="left">
+                                        <h5>Samanta J.</h5>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                        </div>
+                                        <span>6 days ago</span>
+                                    </div>
+                                    <div class="right">
+                                        <h5>Good, perfect size</h5>
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
+                                            cum dolores assumenda asperiores facilis porro reprehenderit animi
+                                            culpa atque blanditiis commodi perspiciatis doloremque, possimus,
+                                            explicabo, autem fugit beatae quae voluptas!
+                                        </span>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-regular fa-thumbs-up"></i>Helpful (2)</a>
+                                            <a href="">
+                                                <i class="fa-regular fa-thumbs-down"></i>Unhelpful
+                                                (0)
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="each">
+                                    <div class="left">
+                                        <h5>John Doe</h5>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                        </div>
+                                        <span>5 days ago</span>
+                                    </div>
+                                    <div class="right">
+                                        <h5>Very good</h5>
+                                        <span>
+                                            Sed, molestias, tempore? Ex dolor esse iure hic veniam laborum
+                                            blanditiis laudantium iste amet. Cum non voluptate eos enim, ab
+                                            cumque nam, modi, quas iure illum repellendus, blanditiis
+                                            perspiciatis beatae!
+                                        </span>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-regular fa-thumbs-up"></i>Helpful (0)</a>
+                                            <a href="">
+                                                <i class="fa-regular fa-thumbs-down"></i>Unhelpful
+                                                (0)
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="additions">
+                                <h4>Add a Review</h4>
+                                <span>
+                                    Your email address will not be published. Required fields are marked
+                                    *
+                                </span> <br>
+                                <p>Your rating *</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star" style="color: #999999;"></i>
+                                    <i class="fa-solid fa-star" style="color: #999999;"></i>
+                                    <i class="fa-solid fa-star" style="color: #999999;"></i>
+                                    <i class="fa-solid fa-star" style="color: #999999;"></i>
+                                    <i class="fa-solid fa-star" style="color: #999999;"></i>
+                                </div> <br>
+                                <textarea name="message" class="inputs toggle" placeholder="Comment *" cols="42"
+                                          rows="5"></textarea>
+                                <div class="name">
+                                    <input type="text" class="name inputs toggle" placeholder="Name *">
+                                    <input type="text" class="email inputs toggle" placeholder="Email *">
+                                </div>
+                                <input class="checker" name="last" type="checkbox">
+                                <label for="last">
+                                    Save my name, email, and website in this browser for the next
+                                    time I comment.
+                                </label> <br>
+                                <button>Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="may-like">
+    <div class="container">
+        <div class="head">
+            <h4>You May Also Like</h4>
+        </div>
+        <div class="cards-tab ">
+            <div class="row cardss owl-carousel owl-theme">
+                <div style="height: 500px" class="col-sm-12 col-md-4 col-lg-2">
+                    <div class="each-card">
+                        <div class="img-part">
+                            <p class="top">Top</p>
+                            <img src="~/assets/imgs/Product Detail/slider1.jpeg" alt="">
+                            <img src="~/assets/imgs/Product Detail/slider1-hover.jpeg" class="open-hovered"
+                                 alt="">
+                            <div class="animationss">
+                                <div class="icons animate__animated">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-binoculars"></i>
+                                    <i class="fa-solid fa-shuffle"></i>
+                                </div>
+                                <div class="option animate__animated">
+                                    <span><i class="fa-solid fa-cart-plus"></i>add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-part">
+                            <h6>Beige metal hoop tote bag</h6>
+                            <span>$75.00-$80.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2">
+                    <div class="each-card">
+                        <div class="img-part">
+                            <p class="top d-none">Top</p>
+                            <img src="~/assets/imgs/Product Detail/slider2.jpeg" alt="">
+                            <img src="~/assets/imgs/Product Detail/slider2-hover.jpeg" class="open-hovered"
+                                 alt="">
+                            <div class="animationss">
+                                <div class="icons animate__animated">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-binoculars"></i>
+                                    <i class="fa-solid fa-shuffle"></i>
+                                </div>
+                                <div class="option animate__animated">
+                                    <span><i class="fa-solid fa-cart-plus"></i>add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-part">
+                            <h6>Beige ring handle circle cross body bag</h6>
+                            <span>$72.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2">
+                    <div class="each-card">
+                        <div class="img-part">
+                            <p class="top d-none">Top</p>
+                            <img src="~/assets/imgs/Product Detail/slider3.jpeg" alt="">
+                            <img src="~/assets/imgs/Product Detail/slider3-hover.jpeg" class="open-hovered"
+                                 alt="">
+                            <div class="animationss">
+                                <div class="icons animate__animated">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-binoculars"></i>
+                                    <i class="fa-solid fa-shuffle"></i>
+                                </div>
+                                <div class="option animate__animated">
+                                    <span><i class="fa-solid fa-cart-plus"></i>add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-part">
+                            <h6>Beige V neck button cardigan</h6>
+                            <span>$60.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2">
+                    <div class="each-card">
+                        <div class="img-part">
+                            <p class="top d-none">Top</p>
+                            <img src="~/assets/imgs/Product Detail/slider4.jpeg" alt="">
+                            <img src="~/assets/imgs/Product Detail/slider4-hover.jpeg" class="open-hovered"
+                                 alt="">
+                            <div class="animationss">
+                                <div class="icons animate__animated">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-binoculars"></i>
+                                    <i class="fa-solid fa-shuffle"></i>
+                                </div>
+                                <div class="option animate__animated">
+                                    <span><i class="fa-solid fa-cart-plus"></i>add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-part">
+                            <h6>Black denim dungaree dress</h6>
+                            <span>$90.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2">
+                    <div class="each-card">
+                        <div class="img-part">
+                            <p class="top d-none">Top</p>
+                            <img src="~/assets/imgs/Product Detail/slider5.jpeg" alt="">
+                            <img src="~/assets/imgs/Product Detail/slider5-hover.jpeg" class="open-hovered"
+                                 alt="">
+                            <div class="animationss">
+                                <div class="icons animate__animated">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-binoculars"></i>
+                                    <i class="fa-solid fa-shuffle"></i>
+                                </div>
+                                <div class="option animate__animated">
+                                    <span><i class="fa-solid fa-cart-plus"></i>add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-part">
+                            <h6>Black faux leather chain trim sandals</h6>
+                            <span>$190.00</span>
+                            <p>$310.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="scrollBtn">
+    <div class="btn">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
+</section>
+
+@section Scripts{
+    <script src="~/assets/js/productdetail.js"></script>
+}

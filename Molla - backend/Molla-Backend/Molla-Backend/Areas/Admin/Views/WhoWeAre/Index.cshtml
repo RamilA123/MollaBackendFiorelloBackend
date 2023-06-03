@@ -1,0 +1,65 @@
+﻿@model WhoWeAreVM
+
+<style>
+    .status-slider {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .status-true {
+        background-color: greenyellow;
+    }
+
+    .status-false {
+        background-color: red;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+                <tr>
+                    <th>Title</th>
+                    <th>Upper Image</th>
+                    <th>Back Image</th>
+                    <th>Status</th>
+                    <th>Create Date</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.Title</td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="~/assets/imgs/About/@Model.UpperImage"
+                                 alt=""
+                                 style="width: 60px; height: 60px"
+                                 class="rounded-circle" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="~/assets/imgs/About/@Model.BackImage"
+                                 alt=""
+                                 style="width: 45px; height: 45px"
+                                 class="rounded-circle" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status-slider @(Model.Status ? "status-true":"status-false")"></div>
+                    </td>
+                    <td>@Model.CreateDate</td>
+                    <td>
+                        <a asp-action="Detail" asp-route-id="@Model.Id" class="btn btn-primary btn-rounded btn-fw">Detail</a>
+                        <a href="#" class="btn btn-warning btn-rounded btn-fw">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger btn-rounded btn-fw">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,913 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section id="info-message">
+    <div class="all animate__animated">
+        <span>Product added to Wishlist</span>
+    </div>
+</section>
+
+<section id="cart-info" class="d-none">
+    <div class="container">
+        <div class="empty-message d-none">
+            <span>No products in the cart.</span>
+        </div>
+        <div class="table">
+            <div class="all-infos">
+                <!-- <div class="each-info" data-id="1">
+                    <div class="info">
+                        <span>Microsoft – Refurbish Xbox One S 500GB</span>
+                        <p>1 X $279.99</p>
+                    </div>
+                    <div class="photo">
+                        <img src="~/assets/imgs/Home/featured2.jpeg" alt="">
+                    </div>
+                    <div class="option">
+                        <i class="fa-solid fa-x delete-all"></i>
+                    </div>
+                </div> -->
+            </div>
+            <div class="bottom">
+                <div class="total">
+                    <span>Total: </span>
+                    <span class="totalPrice"></span>
+                </div>
+                <div class="buttons">
+                    <a class="view" href="~/cart.html">View Cart</a>
+                    <a class="checkout" href="">Checkout<i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="productSlider">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-8">
+                <div class="slider">
+                    <div class="row justify-content-center">
+                        <div class="chevrons">
+                            <i class="fa-solid fa-chevron-left left"></i>
+                            <i class="fa-solid fa-chevron-right right"></i>
+                        </div>
+                        <div class="img">
+                            <img data-id="1" src="~/assets/imgs/Home/slider-1.jpeg" class="active-img" alt="">
+                            <img data-id="2" src="~/assets/imgs/Home/slider-2.jpeg" class="" alt="">
+                        </div>
+                        <div class="contents">
+                            <div class="airpods each-content active-words" data-aos="fade-up" data-id="1">
+                                <span>Daily Deals</span>
+                                <h2>Airpods Earphones</h2>
+                                <p>Today: </p>
+                                <h3>$247<sup>.99</sup></h3>
+                                <button>Click Here<i class="fa-solid fa-arrow-right-long"></i></button>
+                            </div>
+                            <div class="homepod each-content" data-aos="fade-up" data-id="2">
+                                <span>Deals and Promotions</span>
+                                <h2>Echo Dot 3rd Gen</h2>
+                                <p>$49.99</p>
+                                <h3>$29<sup>.99</sup></h3>
+                                <button>Click Here<i class="fa-solid fa-arrow-right-long"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="otherproducts">
+                    <div class="each-photo">
+                        <img src="~/assets/imgs/Home/top-1.jpeg" alt="">
+                        <div class="text">
+                            <span>Top Product</span>
+                            <h5 class="edifier">Edifier Stereo Bluetooth</h5>
+                            <p>Shop Now<i class="fa-solid fa-arrow-right-long"></i></p>
+                        </div>
+                    </div>
+
+                    <div class="each-photo">
+                        <img src="~/assets/imgs/Home/top-2.jpeg" alt="">
+                        <div class="text">
+                            <span>Clearance</span>
+                            <h5>GoPro - Fusion 360</h5>
+                            <span class="save">Save $70</span>
+                            <p>Shop Now<i class="fa-solid fa-arrow-right-long"></i></p>
+                        </div>
+                    </div>
+
+                    <div class="each-photo">
+                        <img src="~/assets/imgs/Home/top-3.jpeg" alt="">
+                        <div class="text">
+                            <span>Feature</span>
+                            <h5>Apple Watch 4</h5>
+                            <span class="save">Our Hottest Deals</span>
+                            <p>Shop Now<i class="fa-solid fa-arrow-right-long"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="for-phone-products">
+                    <div class="each-photo">
+                        <img src="~/assets/imgs/Home/top-1.jpeg" alt="">
+                        <div class="text">
+                            <span>Top Product</span>
+                            <h5 class="edifier">Edifier Stereo Bluetooth</h5>
+                            <p>Shop Now<i class="fa-solid fa-arrow-right-long"></i></p>
+                        </div>
+                    </div>
+
+                    <div class="each-photo">
+                        <img src="~/assets/imgs/Home/top-2.jpeg" alt="">
+                        <div class="text">
+                            <span>Clearance</span>
+                            <h5>GoPro - Fusion 360</h5>
+                            <span class="save">Save $70</span>
+                            <p>Shop Now<i class="fa-solid fa-arrow-right-long"></i></p>
+                        </div>
+                    </div>
+
+                    <div class="each-photo">
+                        <img src="~/assets/imgs/Home/top-3.jpeg" alt="">
+                        <div class="text">
+                            <span>Feature</span>
+                            <h5>Apple Watch 4</h5>
+                            <span class="save">Our Hottest Deals</span>
+                            <p>Shop Now<i class="fa-solid fa-arrow-right-long"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="products-tab-menu">
+    <div class="products-menu">
+        <div class="for-products-name">
+            <div class="product-names">
+                <h4 data-id="11" class="for-featured active-tab">Featured</h4>
+                <h4 data-id="22" class="for-sale">On Sale</h4>
+                <h4 data-id="33" class="for-rated">Top Rated</h4>
+            </div>
+        </div>
+        <div class="details">
+            <div class="for-featured allcontents" data-id="11">
+                <div class="container">
+                    <div class="products owl-carousel owl-theme">
+                        @foreach (var eachFeatured in Model.Products.Where(m=>m.SalesCount >= 50))
+                            {
+                            <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                <div data-id="@eachFeatured.Id" class="cards">
+                                    <div class="img-part">
+                                        <p class="new">Sale</p>
+                                        <p class="top">Top</p>
+                                        <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                        <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                             alt="">
+                                        <i class="fa-regular fa-heart open-hovered heart"></i>
+                                        <div class="options-part">
+                                            <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                            <span>|</span>
+                                            <i class="fa-solid fa-binoculars"></i>
+                                        </div>
+                                    </div>
+                                    <div class="text-part">
+                                        <p class="mini-detail">@eachFeatured.Features</p>
+                                        <span>@eachFeatured.Name</span>
+                                        <p class="cost">$ @eachFeatured.Price</p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                        </div>
+                                        <p class="reviews">( 2 Reviews )</p>
+                                    </div>
+                                </div>
+                            </a>
+                            }
+                    </div>
+                </div>
+            </div>
+
+            <div class="for-sale allcontents d-none" data-id="22">
+                <div class="container">
+                    <div class="products owl-carousel owl-theme">
+                        @foreach (var eachFeatured in Model.Products.OrderBy(m=>m.Price).Where(m=>m.Price>=20 && m.Price<=200))
+                        {
+                            <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                <div data-id="@eachFeatured.Id" class="cards">
+                                    <div class="img-part">
+                                        <p class="new">Sale</p>
+                                        <p class="top">Top</p>
+                                        <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                        <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                             alt="">
+                                        <i class="fa-regular fa-heart open-hovered heart"></i>
+                                        <div class="options-part">
+                                            <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                            <span>|</span>
+                                            <i class="fa-solid fa-binoculars"></i>
+                                        </div>
+                                    </div>
+                                    <div class="text-part">
+                                        <p class="mini-detail">@eachFeatured.Features</p>
+                                        <span>@eachFeatured.Name</span>
+                                        <p class="cost">$ @eachFeatured.Price</p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                        </div>
+                                        <p class="reviews">( 2 Reviews )</p>
+                                    </div>
+                                </div>
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="for-rated allcontents d-none" data-id="33">
+                <div class="container">
+                    <div class="products owl-carousel owl-theme">
+                        @foreach (var eachFeatured in Model.Products.Where(m=>m.Rating>= 4.5m))
+                        {
+                            <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                <div data-id="@eachFeatured.Id" class="cards">
+                                    <div class="img-part">
+                                        <p class="new">Sale</p>
+                                        <p class="top">Top</p>
+                                        <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                        <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                             alt="">
+                                        <i class="fa-regular fa-heart open-hovered heart"></i>
+                                        <div class="options-part">
+                                            <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                            <span>|</span>
+                                            <i class="fa-solid fa-binoculars"></i>
+                                        </div>
+                                    </div>
+                                    <div class="text-part">
+                                        <p class="mini-detail">@eachFeatured.Features</p>
+                                        <span>@eachFeatured.Name</span>
+                                        <p class="cost">$ @eachFeatured.Price</p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                        </div>
+                                        <p class="reviews">( 2 Reviews )</p>
+                                    </div>
+                                </div>
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sponsor">
+    <div class="container">
+        <div class="backImg">
+            <div class="row justify-content-center">
+                <div class="whiteBoard">
+                    <div class="all">
+                        <div class="left">
+                            <h6>New Deals</h6>
+                            <span>Start Daily at 12pm e.t.</span>
+                        </div>
+                        <div class="cross">
+                            <span>|</span>
+                        </div>
+                        <div class="middle">
+                            <p>
+                                Get<span style="color: black;">FREE SHIPPING* & 5% rewards</span> on
+                                every order with Molla Theme rewards program
+                            </p>
+                        </div>
+                        <div class="right">
+                            <button>
+                                Add to Cart for $50.00/yr<i class="fa-solid fa-arrow-right-long"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="deals-and-outlet">
+    <div class="container">
+        <div class="deals">
+            <div class="row">
+                <h5 class="top">Deals & Outlet</h5>
+                <span class="second-top">today’s deal and more</span>
+                <div class="all-products">
+                    <div class="bigcard">
+                        <div class="text">
+                            <h5>Deal of the Day.</h5>
+                            <span class="limits">Limited quantities.</span>
+                            <p class="detail">Brown faux fur longline coat</p>
+                            <p class="price">$310.00<span class="was-price">Was $190.00</span></p>
+                            <span class="shop-now">Shop Now<i class="fa-solid fa-arrow-right-long"></i></span>
+                            <span class="clock">
+                                <span class="all-time">
+                                    <span class="each-zeros">00</span>
+                                    <span class="each-time">hours</span>
+                                </span>
+                                <p class="dots">:</p>
+                                <span class="all-time">
+                                    <span class="each-zeros">00</span>
+                                    <span class="each-time">mins</span>
+                                </span>
+                                <p class="dots">:</p>
+                                <span class="all-time">
+                                    <span class="each-zeros">00</span>
+                                    <span class="each-time">secs</span>
+                                </span>
+                            </span>
+                        </div>
+                        <img src="~/assets/imgs/Home/deals-backgrounImg.jpeg" alt="">
+                    </div>
+                    <div class="other-cards">
+                        @foreach (var eachFeatured in Model.Products.OrderByDescending(m=>m.Id).Take(2))
+                        {
+                            <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                <div data-id="@eachFeatured.Id" class="cards">
+                                    <div class="img-part">
+                                        <p class="new">Sale</p>
+                                        <p class="top">Top</p>
+                                        <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                        <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                             alt="">
+                                        <i class="fa-regular fa-heart open-hovered heart"></i>
+                                        <div class="options-part">
+                                            <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                            <span>|</span>
+                                            <i class="fa-solid fa-binoculars"></i>
+                                        </div>
+                                    </div>
+                                    <div class="text-part">
+                                        <p class="mini-detail">@eachFeatured.Features</p>
+                                        <span>@eachFeatured.Name</span>
+                                        <p class="cost">$ @eachFeatured.Price</p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                            <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                        </div>
+                                        <p class="reviews">( 2 Reviews )</p>
+                                    </div>
+                                </div>
+                            </a>
+                        }
+                    </div>
+                </div>
+                <button>Shop More Outlet Deals<i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="brand-carousel">
+    <div class="brands">
+        <div class="container">
+            <div class="allbrands owl-carousel owl-theme">
+                @foreach (var brands in Model.BrandsImages)
+                    {
+                        <div class="col-sm-6 col-md-3 col-lg-2">
+                            <img src="~/assets/imgs/Home/@brands.Image" alt="">
+                        </div>
+                    }
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="trending-products">
+    <div class="container">
+        <div class="all">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="name">
+                        <h4>Trending Products</h4>
+                    </div>
+                    <div class="fixed-photo">
+                        <img src="~/assets/imgs/Home/trending-fixed.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12">
+                    <div class="list-type">
+                        <h6 data-id="100" class="for-all active-trend">All</h6>
+                        <h6 data-id="200" class="for-accessories">Accessories</h6>
+                        <h6 data-id="300" class="for-cameras">Cameras & Camcorders</h6>
+                        <h6 data-id="400" class="for-computers">Computers & Tablets</h6>
+                        <h6 data-id="500" class="for-entertainment">Entertainment</h6>
+                    </div>
+                    <div class="allcards">
+                        <div class="for-all allcontents" data-id="100">
+                            <div class="container">
+                                <div class="trending-products owl-carousel owl-theme">
+                                    @foreach (var eachFeatured in Model.Products.Where(m => m.SalesCount >= 50).Take(6))
+                                        {
+                                        <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                            <div data-id="@eachFeatured.Id" class="cards">
+                                                <div class="img-part">
+                                                    <p class="new">Sale</p>
+                                                    <p class="top">Top</p>
+                                                    <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                                    <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                                         alt="">
+                                                    <i class="fa-regular fa-heart open-hovered heart"></i>
+                                                    <div class="options-part">
+                                                        <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                                        <span>|</span>
+                                                        <i class="fa-solid fa-binoculars"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="text-part">
+                                                    <p class="mini-detail">@eachFeatured.Features</p>
+                                                    <span>@eachFeatured.Name</span>
+                                                    <p class="cost">$ @eachFeatured.Price</p>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                    </div>
+                                                    <p class="reviews">( 2 Reviews )</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="for-accessories allcontents d-none" data-id="200">
+                            <div class="container">
+                                <div class="trending-products owl-carousel owl-theme">
+                                    @foreach (var eachFeatured in Model.Products.Where(m => m.Features.Contains("Accessories")))
+                                    {
+                                        <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                            <div data-id="@eachFeatured.Id" class="cards">
+                                                <div class="img-part">
+                                                    <p class="new">Sale</p>
+                                                    <p class="top">Top</p>
+                                                    <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                                    <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                                         alt="">
+                                                    <i class="fa-regular fa-heart open-hovered heart"></i>
+                                                    <div class="options-part">
+                                                        <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                                        <span>|</span>
+                                                        <i class="fa-solid fa-binoculars"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="text-part">
+                                                    <p class="mini-detail">@eachFeatured.Features</p>
+                                                    <span>@eachFeatured.Name</span>
+                                                    <p class="cost">$ @eachFeatured.Price</p>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                    </div>
+                                                    <p class="reviews">( 2 Reviews )</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="for-cameras allcontents d-none" data-id="300">
+                            <div class="container">
+                                <div class="trending-products owl-carousel owl-theme">
+                                    @foreach (var eachFeatured in Model.Products.Where(m => m.Features.Contains("Cameras")))
+                                    {
+                                        <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                            <div data-id="@eachFeatured.Id" class="cards">
+                                                <div class="img-part">
+                                                    <p class="new">Sale</p>
+                                                    <p class="top">Top</p>
+                                                    <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                                    <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                                         alt="">
+                                                    <i class="fa-regular fa-heart open-hovered heart"></i>
+                                                    <div class="options-part">
+                                                        <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                                        <span>|</span>
+                                                        <i class="fa-solid fa-binoculars"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="text-part">
+                                                    <p class="mini-detail">@eachFeatured.Features</p>
+                                                    <span>@eachFeatured.Name</span>
+                                                    <p class="cost">$ @eachFeatured.Price</p>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                    </div>
+                                                    <p class="reviews">( 2 Reviews )</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="for-computers allcontents d-none" data-id="400">
+                            <div class="container">
+                                <div class="trending-products owl-carousel owl-theme">
+                                    @foreach (var eachFeatured in Model.Products.Where(m => m.Features.Contains("Computers")))
+                                    {
+                                        <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                            <div data-id="@eachFeatured.Id" class="cards">
+                                                <div class="img-part">
+                                                    <p class="new">Sale</p>
+                                                    <p class="top">Top</p>
+                                                    <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                                    <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                                         alt="">
+                                                    <i class="fa-regular fa-heart open-hovered heart"></i>
+                                                    <div class="options-part">
+                                                        <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                                        <span>|</span>
+                                                        <i class="fa-solid fa-binoculars"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="text-part">
+                                                    <p class="mini-detail">@eachFeatured.Features</p>
+                                                    <span>@eachFeatured.Name</span>
+                                                    <p class="cost">$ @eachFeatured.Price</p>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                    </div>
+                                                    <p class="reviews">( 2 Reviews )</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="for-entertainment allcontents d-none" data-id="500">
+                            <div class="container">
+                                <div class="trending-products owl-carousel owl-theme">
+                                    @foreach (var eachFeatured in Model.Products.Where(m => m.Features.Contains("Entertainment")))
+                                    {
+                                        <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                            <div data-id="@eachFeatured.Id" class="cards">
+                                                <div class="img-part">
+                                                    <p class="new">Sale</p>
+                                                    <p class="top">Top</p>
+                                                    <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                                    <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                                         alt="">
+                                                    <i class="fa-regular fa-heart open-hovered heart"></i>
+                                                    <div class="options-part">
+                                                        <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                                        <span>|</span>
+                                                        <i class="fa-solid fa-binoculars"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="text-part">
+                                                    <p class="mini-detail">@eachFeatured.Features</p>
+                                                    <span>@eachFeatured.Name</span>
+                                                    <p class="cost">$ @eachFeatured.Price</p>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                    </div>
+                                                    <p class="reviews">( 2 Reviews )</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="top-selling-products">
+    <div class="all-of-them">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heads">
+                        <div class="name">
+                            <h4>Top Selling Products</h4>
+                        </div>
+                        <div class="list-type">
+                            <h6 data-id="111" class="for-all active-list">All</h6>
+                            <h6 data-id="222" class="for-accessories">Accessories</h6>
+                            <h6 data-id="333" class="for-cameras">Cameras & Camcorders</h6>
+                            <h6 data-id="444" class="for-computers">Computers & Tablets</h6>
+                            <h6 data-id="555" class="for-entertainment">Entertainment</h6>
+                        </div>
+                    </div>
+                    <div class="products-list">
+                        <div class="row">
+                            <div class="allcards">
+                                <div class="for-all allcontents" data-id="111">
+                                    <div class="container">
+                                        <div class="top-products owl-carousel owl-theme">
+                                            @foreach (var eachFeatured in Model.Products.Where(m => m.Rating >= 3).Take(6))
+                                                {
+                                                <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                                    <div data-id="@eachFeatured.Id" class="cards">
+                                                        <div class="img-part">
+                                                            <p class="new">Sale</p>
+                                                            <p class="top">Top</p>
+                                                            <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                                            <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                                                 alt="">
+                                                            <i class="fa-regular fa-heart open-hovered heart"></i>
+                                                            <div class="options-part">
+                                                                <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                                                <span>|</span>
+                                                                <i class="fa-solid fa-binoculars"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-part">
+                                                            <p class="mini-detail">@eachFeatured.Features</p>
+                                                            <span>@eachFeatured.Name</span>
+                                                            <p class="cost">$ @eachFeatured.Price</p>
+                                                            <div class="stars">
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                            </div>
+                                                            <p class="reviews">( 2 Reviews )</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="for-accessories allcontents d-none" data-id="222">
+                                    <div class="container">
+                                        <div class="top-products owl-carousel owl-theme">
+                                            @foreach (var eachFeatured in Model.Products.Where(m => m.Features.Contains("Accessories")))
+                                            {
+                                                <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                                    <div data-id="@eachFeatured.Id" class="cards">
+                                                        <div class="img-part">
+                                                            <p class="new">Sale</p>
+                                                            <p class="top">Top</p>
+                                                            <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                                            <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                                                 alt="">
+                                                            <i class="fa-regular fa-heart open-hovered heart"></i>
+                                                            <div class="options-part">
+                                                                <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                                                <span>|</span>
+                                                                <i class="fa-solid fa-binoculars"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-part">
+                                                            <p class="mini-detail">@eachFeatured.Features</p>
+                                                            <span>@eachFeatured.Name</span>
+                                                            <p class="cost">$ @eachFeatured.Price</p>
+                                                            <div class="stars">
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                            </div>
+                                                            <p class="reviews">( 2 Reviews )</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="for-cameras allcontents d-none" data-id="333">
+                                    <div class="container">
+                                        <div class="top-products owl-carousel owl-theme">
+                                            @foreach (var eachFeatured in Model.Products.Where(m => m.Features.Contains("Cameras")))
+                                            {
+                                                <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                                    <div data-id="@eachFeatured.Id" class="cards">
+                                                        <div class="img-part">
+                                                            <p class="new">Sale</p>
+                                                            <p class="top">Top</p>
+                                                            <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                                            <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                                                 alt="">
+                                                            <i class="fa-regular fa-heart open-hovered heart"></i>
+                                                            <div class="options-part">
+                                                                <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                                                <span>|</span>
+                                                                <i class="fa-solid fa-binoculars"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-part">
+                                                            <p class="mini-detail">@eachFeatured.Features</p>
+                                                            <span>@eachFeatured.Name</span>
+                                                            <p class="cost">$ @eachFeatured.Price</p>
+                                                            <div class="stars">
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                            </div>
+                                                            <p class="reviews">( 2 Reviews )</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="for-computers allcontents d-none" data-id="444">
+                                    <div class="container">
+                                        <div class="top-products owl-carousel owl-theme">
+                                            @foreach (var eachFeatured in Model.Products.Where(m => m.Features.Contains("Computers")))
+                                            {
+                                                <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                                    <div data-id="@eachFeatured.Id" class="cards">
+                                                        <div class="img-part">
+                                                            <p class="new">Sale</p>
+                                                            <p class="top">Top</p>
+                                                            <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                                            <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                                                 alt="">
+                                                            <i class="fa-regular fa-heart open-hovered heart"></i>
+                                                            <div class="options-part">
+                                                                <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                                                <span>|</span>
+                                                                <i class="fa-solid fa-binoculars"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-part">
+                                                            <p class="mini-detail">@eachFeatured.Features</p>
+                                                            <span>@eachFeatured.Name</span>
+                                                            <p class="cost">$ @eachFeatured.Price</p>
+                                                            <div class="stars">
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                            </div>
+                                                            <p class="reviews">( 2 Reviews )</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="for-entertainment allcontents d-none" data-id="555">
+                                    <div class="container">
+                                        <div class="top-products owl-carousel owl-theme">
+                                            @foreach (var eachFeatured in Model.Products.Where(m => m.Features.Contains("Entertainment")))
+                                            {
+                                                <a asp-controller="ProductDetail" asp-action="Index" asp-route-id="@eachFeatured.Id">
+                                                    <div data-id="@eachFeatured.Id" class="cards">
+                                                        <div class="img-part">
+                                                            <p class="new">Sale</p>
+                                                            <p class="top">Top</p>
+                                                            <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" class="close-hovered" alt="">
+                                                            <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>!m.IsMain).FirstOrDefault().Image" class="open-hovered"
+                                                                 alt="">
+                                                            <i class="fa-regular fa-heart open-hovered heart"></i>
+                                                            <div class="options-part">
+                                                                <i class="fa-solid fa-cart-arrow-down addToCart"></i>
+                                                                <span>|</span>
+                                                                <i class="fa-solid fa-binoculars"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-part">
+                                                            <p class="mini-detail">@eachFeatured.Features</p>
+                                                            <span>@eachFeatured.Name</span>
+                                                            <p class="cost">$ @eachFeatured.Price</p>
+                                                            <div class="stars">
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                            </div>
+                                                            <p class="reviews">( 2 Reviews )</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="icons">
+    <div class="container">
+        <div class="all">
+            @foreach (var icons in Model.Icons)
+                {
+                    <div class="content" data-aos="fade-right">
+                        <i class="fa-solid @icons.ClassName"></i>
+                        <div class="words">
+                            <h3>@icons.Title</h3>
+                            <p>@icons.Info</p>
+                        </div>
+                    </div>
+                }
+        </div>
+    </div>
+</section>
+
+<section id="socials">
+    <div class="container">
+        <div class="backImg">
+            <div class="row justify-content-center">
+                <div class="whiteBoard">
+                    <div class="all">
+                        <div class="col-5">
+                            <div class="left">
+                                <h3>Shop Social</h3>
+                                <p>
+                                    Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit
+                                    amet orci.
+                                </p>
+                                <div class="social-media">
+                                    <i class="fa-brands fa-facebook-f facebook"></i>
+                                    <i class="fa-brands fa-twitter twitter"></i>
+                                    <i class="fa-brands fa-instagram instagram"></i>
+                                    <i class="fa-brands fa-youtube youtube"></i>
+                                    <i class="fa-brands fa-pinterest pinterest"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="cross">
+                                <span class="cross-span">|</span>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="right" data-aos="fade-right">
+                                <h3>Get the Latest Deals</h3>
+                                <p>and <br> receive<span> $20 coupon </span>for first shopping</p>
+                                <div class="input-part">
+                                    <input type="text" placeholder="Enter your Email Address">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="scrollBtn">
+    <div class="btn ">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
+</section>

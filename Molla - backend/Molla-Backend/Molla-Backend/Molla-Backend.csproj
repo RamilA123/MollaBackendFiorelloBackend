@@ -1,0 +1,114 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Molla_Backend</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\admin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Models\" />
+    <Folder Include="Data\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\ViewModels\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Views\Shop\" />
+    <Folder Include="Views\ProductDetail\" />
+    <Folder Include="Views\Blog\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="Areas\Admin\Views\Dashboard\" />
+    <Folder Include="wwwroot\admin\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Areas\Admin\Views\Slider\" />
+    <Folder Include="Areas\Admin\Views\WhoWeAre\" />
+    <Folder Include="Areas\Admin\ViewModels\WhoWeAre\" />
+    <Folder Include="Areas\Admin\ViewModels\BrandsInfo\" />
+    <Folder Include="Areas\Admin\Views\BrandsInfo\" />
+    <Folder Include="Areas\Admin\Views\BrandsImage\" />
+    <Folder Include="Areas\Admin\ViewModels\BrandsImage\" />
+    <Folder Include="Areas\Admin\ViewModels\TeamMember\" />
+    <Folder Include="Areas\Admin\Views\TeamMember\" />
+    <Folder Include="Areas\Admin\ViewModels\CustomerImpression\" />
+    <Folder Include="Areas\Admin\Views\CustomerImpression\" />
+    <Folder Include="Areas\Admin\ViewModels\Blog\" />
+    <Folder Include="Areas\Admin\Views\Blog\" />
+    <Folder Include="Areas\Admin\ViewModels\BlogImage\" />
+    <Folder Include="Areas\Admin\Views\BlogImage\" />
+    <Folder Include="Areas\Admin\ViewModels\Product\" />
+    <Folder Include="Areas\Admin\Views\Product\" />
+    <Folder Include="Areas\Admin\ViewModels\TrendingProduct\" />
+    <Folder Include="Areas\Admin\Views\TrendingProduct\" />
+    <Folder Include="Areas\Admin\ViewModels\TopSellingProduct\" />
+    <Folder Include="Areas\Admin\Views\TopSellingProduct\" />
+    <Folder Include="Areas\Admin\ViewModels\Icon\" />
+    <Folder Include="Areas\Admin\Views\Icon\" />
+    <Folder Include="Areas\Admin\ViewModels\ShopProduct\" />
+    <Folder Include="Areas\Admin\Views\ShopProduct\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Data\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Areas\" />
+    <None Remove="Areas\Admin\" />
+    <None Remove="Areas\Admin\Controllers\" />
+    <None Remove="Areas\Admin\ViewModels\" />
+    <None Remove="Areas\Admin\Views\" />
+    <None Remove="Views\Shop\" />
+    <None Remove="Views\ProductDetail\" />
+    <None Remove="Views\Blog\" />
+    <None Remove="Views\About\" />
+    <None Remove="Areas\Admin\Views\Dashboard\" />
+    <None Remove="Areas\Admin\Views\Shared\" />
+    <None Remove="Services\" />
+    <None Remove="Services\Interfaces\" />
+    <None Remove="Areas\Admin\Views\Slider\" />
+    <None Remove="Areas\Admin\Views\WhoWeAre\" />
+    <None Remove="Areas\Admin\ViewModels\WhoWeAre\" />
+    <None Remove="Areas\Admin\ViewModels\BrandsInfo\" />
+    <None Remove="Areas\Admin\Views\BrandsInfo\" />
+    <None Remove="Areas\Admin\Views\BrandsImage\" />
+    <None Remove="Areas\Admin\ViewModels\BrandsImage\" />
+    <None Remove="Areas\Admin\ViewModels\TeamMember\" />
+    <None Remove="Areas\Admin\Views\TeamMember\" />
+    <None Remove="Areas\Admin\ViewModels\CustomerImpression\" />
+    <None Remove="Areas\Admin\Views\CustomerImpression\" />
+    <None Remove="Areas\Admin\ViewModels\Blog\" />
+    <None Remove="Areas\Admin\Views\Blog\" />
+    <None Remove="Areas\Admin\ViewModels\BlogImage\" />
+    <None Remove="Areas\Admin\Views\BlogImage\" />
+    <None Remove="Areas\Admin\ViewModels\Product\" />
+    <None Remove="Areas\Admin\Views\Product\" />
+    <None Remove="Areas\Admin\ViewModels\TrendingProduct\" />
+    <None Remove="Areas\Admin\Views\TrendingProduct\" />
+    <None Remove="Areas\Admin\ViewModels\TopSellingProduct\" />
+    <None Remove="Areas\Admin\Views\TopSellingProduct\" />
+    <None Remove="Areas\Admin\ViewModels\Icon\" />
+    <None Remove="Areas\Admin\Views\Icon\" />
+    <None Remove="Areas\Admin\ViewModels\ShopProduct\" />
+    <None Remove="Areas\Admin\Views\ShopProduct\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.13">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.13">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.13" />
+  </ItemGroup>
+</Project>

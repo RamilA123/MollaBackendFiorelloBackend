@@ -1,0 +1,291 @@
+﻿@model BlogVM
+
+@{
+    ViewData["Title"] = "Blog Page";
+}
+
+@section CSS{
+    <link rel="stylesheet" href="~/assets/scss/Blog/blog.css">
+}
+
+<section id="caption-photo">
+    <div class="back-part">
+        <div class="container">
+            <h1>Blog Classic</h1>
+            <p>Blog</p>
+        </div>
+    </div>
+</section>
+
+<section id="links">
+    <div class="container">
+        <div class="all-links">
+            <a href="~/home.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="~/blog.html">Blog</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Classic</span>
+        </div>
+    </div>
+</section>
+
+<section id="settings">
+    <div class="all">
+        <div class="button">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+    </div>
+</section>
+
+<section id="main-content">
+    <div class="container">
+        <div class="all">
+            <div class="row">
+                <div class="col9">
+                    <div class="left">
+                        @foreach (var eachBlog in Model.Blogs)
+                            {
+                                <div class="each-content">
+                                    <div class="up">
+                                        <img src="~/assets/imgs/Blog/@eachBlog.Images.FirstOrDefault().Image" alt="">
+                                    </div>
+                                    <div class="down">
+                                        <div class="first">
+                                            <span>by</span>
+                                            <span class="rightC">@eachBlog.BlogAuthor.FullName</span>
+                                            <span class="rightC padding-part">@eachBlog.CreatedDate.ToString("MMMM dd, yyyy")</span>
+                                            <span>0 Comments</span>
+                                        </div>
+                                        <div class="second">
+                                            <h3>@eachBlog.Title</h3>
+                                        </div>
+                                        <div class="third">
+                                            <span>in</span>
+                                            <span>@eachBlog.Info</span>
+                                        </div>
+                                        <div class="fourth">
+                                            <p>
+                                                @eachBlog.MainDescription
+                                            </p>
+                                        </div>
+                                        <div class="fifth">
+                                            <span>Continue Reading<i class="fa-solid fa-arrow-right-long"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="right">
+                        <div class="search">
+                            <h5>Search</h5>
+                            <input type="text" class="input" id="input" placeholder="Search in blog">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="categories">
+                            <h5>Categories</h5>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>Lifestyle</span>
+                                        <p>3</p>
+                                    </li>
+                                    <li>
+                                        <span>Shopping</span>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <span>Travel</span>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <span>Hobbies</span>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <span>Fashion</span>
+                                        <p>1</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="popular-posts">
+                            <h5>Popular Posts</h5>
+                            @foreach (var eachPost in Model.Blogs.Take(4))
+                                {
+                                    <div class="each-post">
+                                        <div class="img-part">
+                                            <img src="~/assets/imgs/Blog/@eachPost.Images.FirstOrDefault().Image" alt="">
+                                        </div>
+                                        <div class="text-part">
+                                            <p>@eachPost.CreatedDate.ToString("MMMM dd, yyyy")</p>
+                                            <span>@eachPost.Title</span>
+                                        </div>
+                                    </div>
+                                }
+                        </div>
+                        <div class="ads">
+                            <p>Ad box 280 X 280</p>
+                            <img src="~/assets/imgs/Blog/advs.jpeg" alt="">
+                            <div class="text-part">
+                                <span class="mb-5">online & in-store</span>
+                                <h5>Spring Sale</h5>
+                                <h4>UP TO 60% OFF FROM $55</h4>
+                                <button>Shop Now</button>
+                            </div>
+                        </div>
+                        <div class="tags">
+                            <h5>Browse Tags</h5>
+                            <div class="icons">
+                                <button>fashion</button>
+                                <button>style</button>
+                                <button>women</button>
+                            </div>
+                            <div class="icons">
+                                <button>photography</button>
+                                <button>travel</button>
+                            </div>
+                            <div class="icons">
+                                <button>shopping</button>
+                                <button>hobbies</button>
+                            </div>
+                        </div>
+                        <div class="about">
+                            <h5>About Blog</h5>
+                            <span>
+                                Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, pulvinar
+                                nunc sapien ornare nisl.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="phone-content">
+    <div class="all hide-filter">
+        <div class="container">
+            <div class="col3">
+                <div class="right">
+                    <div class="search">
+                        <h5>Search</h5>
+                        <input type="text" class="input" id="input" placeholder="Search in blog">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="categories">
+                        <h5>Categories</h5>
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <span>Lifestyle</span>
+                                    <p>3</p>
+                                </li>
+                                <li>
+                                    <span>Shopping</span>
+                                    <p>1</p>
+                                </li>
+                                <li>
+                                    <span>Travel</span>
+                                    <p>1</p>
+                                </li>
+                                <li>
+                                    <span>Hobbies</span>
+                                    <p>1</p>
+                                </li>
+                                <li>
+                                    <span>Fashion</span>
+                                    <p>1</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="popular-posts">
+                        <h5>Popular Posts</h5>
+                        <div class="each-post">
+                            <div class="img-part">
+                                <img src="~/assets/imgs/Blog/blog-bigP-1.jpeg" alt="">
+                            </div>
+                            <div class="text-part">
+                                <p>Nov 22, 2018</p>
+                                <span>Sed adipiscing ornare..</span>
+                            </div>
+                        </div>
+                        <div class="each-post">
+                            <div class="img-part">
+                                <img src="~/assets/imgs/Blog/blog-bigP-2.jpeg" alt="">
+                            </div>
+                            <div class="text-part">
+                                <p>Nov 19, 2018</p>
+                                <span>Fusce pellentesque suscipit.</span>
+                            </div>
+                        </div>
+                        <div class="each-post">
+                            <div class="img-part">
+                                <img src="~/assets/imgs/Blog/blog-bigP-3.jpeg" alt="">
+                            </div>
+                            <div class="text-part">
+                                <p>Nov 12, 2018</p>
+                                <span>Donec nec justo eget felis facilisis fermentum.</span>
+                            </div>
+                        </div>
+                        <div class="each-post">
+                            <div class="img-part">
+                                <img src="~/assets/imgs/Blog/blog-bigP-4.jpeg" alt="">
+                            </div>
+                            <div class="text-part">
+                                <p>Nov 25, 2018</p>
+                                <span>Vivamus vestibulum ngtulla necante.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ads">
+                        <p>Ad box 280 X 280</p>
+                        <img src="~/assets/imgs/Blog/advs.jpeg" alt="">
+                        <div class="text-part">
+                            <span class="mb-5">online & in-store</span>
+                            <h5>Spring Sale</h5>
+                            <h4>UP TO 60% OFF FROM $55</h4>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <h5>Browse Tags</h5>
+                        <div class="icons">
+                            <button>fashion</button>
+                            <button>style</button>
+                            <button>women</button>
+                        </div>
+                        <div class="icons">
+                            <button>photography</button>
+                            <button>travel</button>
+                        </div>
+                        <div class="icons">
+                            <button>shopping</button>
+                            <button>hobbies</button>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <h5>About Blog</h5>
+                        <span>
+                            Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, pulvinar
+                            nunc sapien ornare nisl.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="scrollBtn">
+    <div class="btn">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
+</section>
+
+@section Scripts{
+    <script src="~/assets/js/blog.js"></script>
+}

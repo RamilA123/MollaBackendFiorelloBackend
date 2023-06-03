@@ -1,0 +1,134 @@
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/appsettings.Development.json
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/appsettings.json
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Molla-Backend.staticwebassets.runtime.json
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Molla-Backend
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Molla-Backend.deps.json
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Molla-Backend.runtimeconfig.json
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Molla-Backend.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Molla-Backend.pdb
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Humanizer.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/System.Drawing.Common.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/System.Runtime.Caching.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/System.Security.Permissions.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/System.Windows.Extensions.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/Molla-Backend.csproj.AssemblyReference.cache
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/Molla-Backend.GeneratedMSBuildEditorConfig.editorconfig
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/Molla-Backend.AssemblyInfoInputs.cache
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/Molla-Backend.AssemblyInfo.cs
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/Molla-Backend.csproj.CoreCompileInputs.cache
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/Molla-Backend.MvcApplicationPartsAssemblyInfo.cache
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/Molla-Backend.RazorAssemblyInfo.cache
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/Molla-Backend.RazorAssemblyInfo.cs
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/staticwebassets/msbuild.Molla-Backend.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/staticwebassets/msbuild.build.Molla-Backend.props
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.Molla-Backend.props
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.Molla-Backend.props
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/staticwebassets.build.json
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/staticwebassets.development.json
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/scopedcss/bundle/Molla-Backend.styles.css
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/scopedcss/projectbundle/Molla-Backend.bundle.scp.css
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/Molla-Backend.csproj.CopyComplete
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/Molla-Backend.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/refint/Molla-Backend.dll
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/Molla-Backend.pdb
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/Molla-Backend.genruntimeconfig.cache
+/Users/afandiyevmusa/Desktop/P414Code/Backend/ASP.NET/HW/Molla-Backend/Molla-Backend/obj/Debug/net6.0/ref/Molla-Backend.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\appsettings.json
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Molla-Backend.staticwebassets.runtime.json
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Molla-Backend.exe
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Molla-Backend.deps.json
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Molla-Backend.runtimeconfig.json
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Molla-Backend.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Molla-Backend.pdb
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Humanizer.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\Molla-Backend.csproj.AssemblyReference.cache
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\Molla-Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\Molla-Backend.AssemblyInfoInputs.cache
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\Molla-Backend.AssemblyInfo.cs
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\Molla-Backend.csproj.CoreCompileInputs.cache
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\Molla-Backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\Molla-Backend.RazorAssemblyInfo.cache
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\Molla-Backend.RazorAssemblyInfo.cs
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\staticwebassets\msbuild.Molla-Backend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\staticwebassets\msbuild.build.Molla-Backend.props
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Molla-Backend.props
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Molla-Backend.props
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\scopedcss\bundle\Molla-Backend.styles.css
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\scopedcss\projectbundle\Molla-Backend.bundle.scp.css
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\Molla-Backend.csproj.CopyComplete
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\Molla-Backend.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\refint\Molla-Backend.dll
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\Molla-Backend.pdb
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\Molla-Backend.genruntimeconfig.cache
+C:\Users\FX706HCB\Desktop\Code Academy\ASP.NET\ASP.NET - Task 8\Fiorello - backend Basket\Molla-Backend\Molla-Backend\obj\Debug\net6.0\ref\Molla-Backend.dll

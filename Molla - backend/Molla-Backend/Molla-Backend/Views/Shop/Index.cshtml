@@ -1,0 +1,738 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Shop Page";
+    string searchT = ViewBag.SearchText;
+}
+
+@section CSS{
+    <link rel="stylesheet" href="~/assets/scss/Shop/shop.css">
+}
+
+<section id="caption-photo">
+    <div class="back-part">
+        <div class="container">
+            <h1>List</h1>
+            <p>Shop</p>
+        </div>
+    </div>
+</section>
+
+<section id="links">
+    <div class="container">
+        <div class="all-links">
+            <a href="~/home.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="~/shop.html">Shop</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>List</span>
+        </div>
+    </div>
+</section>
+
+<section id="settings">
+    <div class="all">
+        <div class="button">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+    </div>
+</section>
+
+<section id="shop">
+    <div class="all">
+        <div class="container">
+            <div class="row">
+                <div class="col3">
+                    <div class="left-part">
+                        <div class="filters">
+                            <h6>Filters:</h6>
+                            <span>Clean All</span>
+                        </div>
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                        Category
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                     aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body category">
+                                        <div class="each-category">
+                                            <a asp-controller="Shop" asp-action="GetText" class="d-flex justify-content-between w-100 cards" style="color:black">
+                                                <span class="nameofcard">Accessories</span>
+                                                <p>8</p>
+                                            </a>
+                                        </div>
+                                        <div class="each-category">
+                                            <a asp-controller="Shop" asp-action="GetText" class="d-flex justify-content-between w-100 cards" style="color:black">
+                                                <span class="nameofcard">Cameras</span>
+                                                <p>1</p>
+                                            </a>
+                                        </div>
+                                        <div class="each-category">
+                                            <a asp-controller="Shop" asp-action="GetText" class="d-flex justify-content-between w-100 cards" style="color:black">
+                                                <span class="nameofcard">Computers</span>
+                                                <p>3</p>
+                                            </a>
+                                        </div>
+                                        <div class="each-category">
+                                            <a asp-controller="Shop" asp-action="GetText" class="d-flex justify-content-between w-100 cards" style="color:black">
+                                                <span class="nameofcard">Tablets</span>
+                                                <p>5</p>
+                                            </a>
+                                        </div>
+                                        <div class="each-category">
+                                            <a asp-controller="Shop" asp-action="GetText" class="d-flex justify-content-between w-100 cards" style="color:black">
+                                                <span class="nameofcard">Entertainment</span>
+                                                <p>1</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        Size
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                                     aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body size">
+                                        <div class="each-input">
+                                            <input type="checkbox">
+                                            <label for="">Extra Small</label>
+                                        </div>
+                                        <div class="each-input">
+                                            <input type="checkbox">
+                                            <label for="">Small</label>
+                                        </div>
+                                        <div class="each-input">
+                                            <input type="checkbox">
+                                            <label for="">Medium</label>
+                                        </div>
+                                        <div class="each-input">
+                                            <input type="checkbox">
+                                            <label for="">Large</label>
+                                        </div>
+                                        <div class="each-input">
+                                            <input type="checkbox">
+                                            <label for="">Extra Large</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        Colour
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+                                     aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body colour">
+                                        <button style="background-color: #cc9967;"></button>
+                                        <button style="background-color: #3399cc;"></button>
+                                        <button style="background-color: #9966cc;"></button>
+                                        <button style="background-color: #333333;"></button>
+                                        <button style="background-color: #669932;"></button>
+                                        <button style="background-color: #cc3334;"></button>
+                                        <button style="background-color: #999999;"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                    <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                        Brand
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
+                                     aria-labelledby="panelsStayOpen-headingFour">
+                                    <div class="accordion-body brands">
+                                        <div class="each-input">
+                                            <input type="checkbox">
+                                            <label for="">Next</label>
+                                        </div>
+                                        <div class="each-input">
+                                            <input type="checkbox">
+                                            <label for="">River Island</label>
+                                        </div>
+                                        <div class="each-input">
+                                            <input type="checkbox">
+                                            <label for="">Geox</label>
+                                        </div>
+                                        <div class="each-input">
+                                            <input type="checkbox">
+                                            <label for="">New Balance</label>
+                                        </div>
+                                        <div class="each-input">
+                                            <input type="checkbox">
+                                            <label for="">UGG</label>
+                                        </div>
+                                        <div class="each-input">
+                                            <input type="checkbox">
+                                            <label for="">F&F</label>
+                                        </div>
+                                        <div class="each-input">
+                                            <input type="checkbox">
+                                            <label for="">Nike</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                    <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                        Price
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show"
+                                     aria-labelledby="panelsStayOpen-headingFive">
+                                    <div class="accordion-body price">
+                                        <div class="up">
+                                            <span>
+                                                Price Range:
+                                                <p>$</p>
+                                                <p class="zero">0</p>
+                                                <p> - $</p>
+                                                <p class="thousand">1000</p>
+                                            </span>
+                                            <p>Filter</p>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="range">
+                                                <div class="range-slider">
+                                                    <span class="range-selected"></span>
+                                                </div>
+                                                <div class="range-input">
+                                                    <input type="range" class="min" min="0" max="1000" value="0"
+                                                           step="50">
+                                                    <input type="range" class="max" min="0" max="1000" value="1000"
+                                                           step="50">
+                                                </div>
+                                                <div class="range-price">
+                                                    <p style="color: #fcb941;">$</p>
+                                                    <input type="number" min="0" max="1000" class="min" name="min" value="0">
+                                                    <p style="color: #fcb941;" class="max-part">$</p>
+                                                    <input type="number" min="0" max="1000" class="max" name="max" value="1000">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col9">
+                    <div class="infos">
+                        <h6>Showing<strong>5 of 50</strong> Products</h6>
+                        <div class="sorting">
+                            <span>Sort by:</span>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    Default
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <i class="fa-solid fa-check check"></i>
+                                    <li><a class="dropdown-item" href="#">Default</a></li>
+                                    <li><a class="dropdown-item" href="#">Most Popular</a></li>
+                                    <li><a class="dropdown-item" href="#">Most Rated</a></li>
+                                    <li><a class="dropdown-item" href="#">Date</a></li>
+                                </ul>
+                            </div>
+                            <div class="seen-style">
+                                <i class="fa-solid fa-grip"></i>
+                                <i class="fa-solid fa-grip" style="color: #cfcfcf;"></i>
+                                <i class="fa-solid fa-grip" style="color: #cfcfcf;"></i>
+                                <i class="fa-solid fa-grip" style="color: #cfcfcf;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    @if (searchT is null)
+                    {
+                        @foreach (var eachFeatured in Model)
+                        {
+                            <div class="each-cards">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6 col-md-3 col-lg-3">
+                                            <div class="left">
+                                                <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 order-last">
+                                            <div class="middle">
+                                                <span>@eachFeatured.Features</span>
+                                                <h6>@eachFeatured.Name</h6>
+                                                <p>
+                                                    @eachFeatured.Features
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6 order-md-last order-lg-last">
+                                            <div class="right">
+                                                <span>$55.00</span>
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                    <p class="reviews">( @eachFeatured.SalesCount Reviews )</p>
+                                                </div>
+                                                <div class="icons">
+                                                    <div class="left-icon">
+                                                        <i class="fa-solid fa-binoculars"></i>
+                                                        <span>quick view</span>
+                                                    </div>
+                                                    <div class="right-icon">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                        <span>wishlist</span>
+                                                    </div>
+                                                </div>
+                                                <button><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        @foreach (var eachFeatured in Model.Where(m => m.Features.Contains(searchT)))
+                        {
+                            <div class="each-cards">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6 col-md-3 col-lg-3">
+                                            <div class="left">
+                                                <img src="~/assets/imgs/Home/@eachFeatured.Images.Where(m=>m.IsMain).FirstOrDefault().Image" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 order-last">
+                                            <div class="middle">
+                                                <span>@eachFeatured.Features</span>
+                                                <h6>@eachFeatured.Name</h6>
+                                                <p>
+                                                    @eachFeatured.Features
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6 order-md-last order-lg-last">
+                                            <div class="right">
+                                                <span>$55.00</span>
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #fcb941;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                                    <p class="reviews">( @eachFeatured.SalesCount Reviews )</p>
+                                                </div>
+                                                <div class="icons">
+                                                    <div class="left-icon">
+                                                        <i class="fa-solid fa-binoculars"></i>
+                                                        <span>quick view</span>
+                                                    </div>
+                                                    <div class="right-icon">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                        <span>wishlist</span>
+                                                    </div>
+                                                </div>
+                                                <button><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    @*<div class="each-cards">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3 col-lg-3">
+                        <div class="left">
+                            <img src="~/assets/imgs/Shop/shop3.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-last">
+                        <div class="middle">
+                            <span>Women</span>
+                            <h6>Beige V neck button cardigan</h6>
+                            <p>
+                                Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
+                                luctus metus libero eu augue. Morbi purus libero, faucibus
+                                adipiscing.
+                                Sed lectus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 order-md-last order-lg-last">
+                        <div class="right">
+                            <span>$72.00</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <p class="reviews">( 2 Reviews )</p>
+                            </div>
+                            <div class="icons">
+                                <div class="left-icon">
+                                    <i class="fa-solid fa-binoculars"></i>
+                                    <span>quick view</span>
+                                </div>
+                                <div class="right-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span>wishlist</span>
+                                </div>
+                            </div>
+                            <button><i class="fa-solid fa-cart-plus"></i></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="each-cards">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3 col-lg-3">
+                        <div class="left">
+                            <img src="~/assets/imgs/Shop/shop4.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-last">
+                        <div class="middle">
+                            <span>Women</span>
+                            <h6>Black denim dungaree dress</h6>
+                            <p>
+                                Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
+                                luctus metus libero eu augue. Morbi purus libero, faucibus
+                                adipiscing.
+                                Sed lectus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 order-md-last order-lg-last">
+                        <div class="right">
+                            <span>$60.00</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <p class="reviews">( 2 Reviews )</p>
+                            </div>
+                            <div class="icons">
+                                <div class="left-icon">
+                                    <i class="fa-solid fa-binoculars"></i>
+                                    <span>quick view</span>
+                                </div>
+                                <div class="right-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span>wishlist</span>
+                                </div>
+                            </div>
+                            <button><i class="fa-solid fa-cart-plus"></i></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="each-cards">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3 col-lg-3">
+                        <div class="left">
+                            <img src="~/assets/imgs/Shop/shop5.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-last">
+                        <div class="middle">
+                            <span>Boots, Shoes, Women</span>
+                            <h6>Black faux leather chain trim sandals</h6>
+                            <p>
+                                Morbi purus libero, faucibus adipiscing, commodo quis, gravida id,
+                                est.
+                                Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at
+                                felis. Vestibulum volutpat, lacus...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 order-md-last order-lg-last">
+                        <div class="right">
+                            <span>$90.00</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                <p class="reviews">( 2 Reviews )</p>
+                            </div>
+                            <div class="icons">
+                                <div class="left-icon">
+                                    <i class="fa-solid fa-binoculars"></i>
+                                    <span>quick view</span>
+                                </div>
+                                <div class="right-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span>wishlist</span>
+                                </div>
+                            </div>
+                            <button><i class="fa-solid fa-cart-plus"></i></i>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+                    <nav aria-label="Page navigation example" class="pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link">
+                                    <i class="fa-solid fa-arrow-left-long left"></i>Previous
+                                </a>
+                            </li>
+                            <li class="page-item first"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item disabled"><a class="page-link" href="#">of 4</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    Next<i class="fa-solid fa-arrow-right-long right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="filter-for-phone">
+    <div class="all hide-filter">
+        <div class="container">
+            <div class="col3">
+                <div class="filters">
+                    <h6>Filters:</h6>
+                    <span>Clean All</span>
+                </div>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                Category
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                             aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body category">
+                                <div class="each-category">
+                                    <a class="d-flex justify-content-between w-100 cards" style="color:black">
+                                        <span class="nameofcard">Accessories</span>
+                                        <p>8</p>
+                                    </a>
+                                </div>
+                                <div class="each-category">
+                                    <a class="d-flex justify-content-between w-100 cards" style="color:black">
+                                        <span>Cameras</span>
+                                        <p>1</p>
+                                    </a>
+                                </div>
+                                <div class="each-category">
+                                    <a class="d-flex justify-content-between w-100 cards" style="color:black">
+                                        <span>Computers</span>
+                                        <p>3</p>
+                                    </a>
+                                </div>
+                                <div class="each-category">
+                                    <a class="d-flex justify-content-between w-100 cards" style="color:black">
+                                        <span>Tablets</span>
+                                        <p>5</p>
+                                    </a>
+                                </div>
+                                <div class="each-category">
+                                    <a class="d-flex justify-content-between w-100 cards" style="color:black">
+                                        <span>Entertainment</span>
+                                        <p>1</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                Size
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                             aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body size">
+                                <div class="each-input">
+                                    <input type="checkbox">
+                                    <label for="">Extra Small</label>
+                                </div>
+                                <div class="each-input">
+                                    <input type="checkbox">
+                                    <label for="">Small</label>
+                                </div>
+                                <div class="each-input">
+                                    <input type="checkbox">
+                                    <label for="">Medium</label>
+                                </div>
+                                <div class="each-input">
+                                    <input type="checkbox">
+                                    <label for="">Large</label>
+                                </div>
+                                <div class="each-input">
+                                    <input type="checkbox">
+                                    <label for="">Extra Large</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                Colour
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+                             aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body colour">
+                                <button style="background-color: #cc9967;"></button>
+                                <button style="background-color: #3399cc;"></button>
+                                <button style="background-color: #9966cc;"></button>
+                                <button style="background-color: #333333;"></button>
+                                <button style="background-color: #669932;"></button>
+                                <button style="background-color: #cc3334;"></button>
+                                <button style="background-color: #999999;"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseFour">
+                                Brand
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
+                             aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body brands">
+                                <div class="each-input">
+                                    <input type="checkbox">
+                                    <label for="">Next</label>
+                                </div>
+                                <div class="each-input">
+                                    <input type="checkbox">
+                                    <label for="">River Island</label>
+                                </div>
+                                <div class="each-input">
+                                    <input type="checkbox">
+                                    <label for="">Geox</label>
+                                </div>
+                                <div class="each-input">
+                                    <input type="checkbox">
+                                    <label for="">New Balance</label>
+                                </div>
+                                <div class="each-input">
+                                    <input type="checkbox">
+                                    <label for="">UGG</label>
+                                </div>
+                                <div class="each-input">
+                                    <input type="checkbox">
+                                    <label for="">F&F</label>
+                                </div>
+                                <div class="each-input">
+                                    <input type="checkbox">
+                                    <label for="">Nike</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                            <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                Price
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show"
+                             aria-labelledby="panelsStayOpen-headingFive">
+                            <div class="accordion-body price">
+                                <div class="up">
+                                    <span>
+                                        Price Range:
+                                        <p>$</p>
+                                        <p class="zero">0</p>
+                                        <p> - $</p>
+                                        <p class="thousand">1000</p>
+                                    </span>
+                                    <p>Filter</p>
+                                </div>
+                                <div class="bottom">
+                                    <div class="range">
+                                        <div class="sliderR">
+                                            <span class="selected-range"></span>
+                                        </div>
+                                        <div class="input-range">
+                                            <input type="range" class="min" min="0" max="1000" value="0"
+                                                   step="50">
+                                            <input type="range" class="max" min="0" max="1000" value="1000"
+                                                   step="50">
+                                        </div>
+                                        <div class="price-range">
+                                            <p style="color: #fcb941;">$</p>
+                                            <input disabled type="number" min="0" max="1000" class="min" name="min" value="0">
+                                            <p style="color: #fcb941;" class="max-part">$</p>
+                                            <input disabled type="number" min="0" max="1000" class="max" name="max" value="1000">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="scrollBtn">
+    <div class="btn">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
+</section>
+
+@section Scripts{
+    <script src="~/assets/js/category.js"></script>
+    <script src="~/assets/js/shop.js"></script>
+}
